@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Page init event
+    document.addEventListener('init', function(event) {
+      var page = event.target;
+
+      if (page.matches('#first-page')) {
+
+        page.querySelector('#first1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page2.html');
+        };
+        page.querySelector('#first2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page5.html');
+        };
+      }
+
+        if (page.matches('#second-page')) {
+
+        page.querySelector('#second1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page3.html');
+        };
+       page.querySelector('#second2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page5.html');
+        };
+      }
+
+        if (page.matches('#three-page')) {
+
+        page.querySelector('#three1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page4.html');
+        };
+       page.querySelector('#three2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page6.html');
+        };
+      }
+
+        if (page.matches('#four-page')) {
+
+        page.querySelector('#four1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page11.html');
+        };
+       page.querySelector('#four2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page12.html');
+        };
+      }
+
+        if (page.matches('#five-page')) {
+
+        page.querySelector('#five1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page6.html');
+        };
+       page.querySelector('#five2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page8.html');
+        };
+      }
+
+        if (page.matches('#six-page')) {
+
+        page.querySelector('#six1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page4.html');
+        };
+        page.querySelector('#six2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page7.html');
+        };
+      }
+
+         if (page.matches('#seven-page')) {
+
+        page.querySelector('#seven1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page13.html');
+        };
+       page.querySelector('#seven2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page14.html');
+        };
+      }
+
+        if (page.matches('#eight-page')) {
+
+        page.querySelector('#eight1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page6.html');
+        };
+        page.querySelector('#eight2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page9.html');
+        };
+      }
+
+        if (page.matches('#nine-page')) {
+
+        page.querySelector('#nine1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page7.html');
+        };
+        page.querySelector('#nine2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page10.html');
+        };
+      }
+
+        if (page.matches('#ten-page')) {
+
+        page.querySelector('#ten1-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page15.html');
+        };
+        page.querySelector('#ten2-button').onclick = function() {
+          document.querySelector('#navigator').pushPage('page16.html');
+        };
+      }
+    });
+
+    if (ons.platform.isIPhoneX()) {
+      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+    }
+  </script>
+</head>
+<body>
+  <ons-navigator id="navigator" page="page1.html"></ons-navigator>
+
+  <ons-template id="page1.html">
+    <ons-page id="first-page">
+      <ons-toolbar>
+        <div class="center">Page 1</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>夏といえば？</p>
+        <ons-button large--quiet id="first1-button">海で遊ぶ！</ons-button>
+        <ons-button large--quiet id="first2-button">クーラーないと死んじゃう</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page2.html">
+    <ons-page id="second-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>Page 1</ons-back-button></div>
+        <div class="center">Page 2</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>泳ぐならどっち？</p>
+        <ons-button large--quiet id="second1-button">タツノオトシゴと会える海</ons-button>
+        <ons-button large--quiet id="second2-button">１億円分札束のプール</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page3.html">
+    <ons-page large--quiet id="three-page">
+      <ons-toolbar>
+        <div class="center">Page 3</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>かき氷を食べよう！</p>
+        <ons-button large--quiet id="three1-button">いちごにレモンに...迷うな</ons-button>
+</ons-button>
+        <ons-button large--quiet id="three2-button">頭痛くなるからパス</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page4.html">
+    <ons-page large--quiet id="four-page">
+      <ons-toolbar>
+        <div class="center">Page 4</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>あなたにとっての海とは？</p>
+        <ons-button large--quiet id="four1-button">命の源</ons-button>
+        <ons-button large--quiet id="four2-button">恋人たちが追いかけっこをする場所</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page5.html">
+    <ons-page id="five-page">
+      <ons-toolbar>
+        <div class="center">Page 5</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>江の島の魅力って？</p>
+        <ons-button large--quiet id="five1-button">歩けばすぐに見えてくる海</ons-button>
+        <ons-button large--quiet id="five2-button">風情ある江の島</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page6.html">
+    <ons-page id="six-page">
+      <ons-toolbar>
+        <div class="center">Page 6</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>トンビがあなたのおにぎりを狙っている！</p>
+        <ons-button large--quiet id="six1-button">隠れて食べる</ons-button>
+        <ons-button large--quiet id="six2-button">見せつけながら食べる</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page7.html">
+    <ons-page id="seven-page">
+      <ons-toolbar>
+        <div class="center">Page 7</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>夕日と海のコントラスト!</p>
+        <ons-button large--quiet id="seven1-button">この美しさをずっと保ち続けたい</ons-button>
+        <ons-button large--quiet id="seven2-button">お腹すいた</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page8.html">
+    <ons-page id="eight-page">
+      <ons-toolbar>
+        <div class="center">Page8 </div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>江の電に揺られるあなた</p>
+        <ons-button large--quiet id="eight1-button">降りたことのない駅で降りてみよう</ons-button>
+        <ons-button large--quiet id="eight2-button">寝ちゃってた</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page9.html">
+    <ons-page id="nine-page">
+      <ons-toolbar>
+        <div class="center">Page 9</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>あなたが落としたのはどちら？
+        </p>
+        <ons-button large--quiet id="nine1-button">何も落としてませんけど...</ons-button>
+        <ons-button large--quiet id="nine2-button">金の延べ棒</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page10.html">
+    <ons-page id="ten-page">
+      <ons-toolbar>
+        <div class="center">Page 10</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>サーファーがあなたに近づいてきました
+        </p>
+        <ons-button large--quiet id="ten1-button">もしかして知り合いかな？</ons-button>
+        <ons-button large--quiet id="ten2-button">ナンパはお断り</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page11.html">
+  <ons-page id="eleven-page">
+    <ons-toolbar>
+        <div class="center">Page 11
+        </div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>THE 一般人！！
+
+          いい意味でも悪い意味でも真面目ちゃんです。ちょっと面白みに欠けるのが玉にきず。
+        </p>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page12.html">
+  <ons-page id="telve-page">
+    <ons-toolbar>
+        <div class="center">Page 12</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>夢の国の住人！！
+
+          あなたが１憶２千万人いれば、日本は平和になれます。マイホームは舞浜がいいかも！
+        </p>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page13.html">
+  <ons-page id="thirteen-page">
+    <ons-toolbar>
+        <div class="center">Page 13</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>頼れるアニキ
+
+          よく言われませんか？現代まれにいる良い人とはあなたです。
+          たまには息抜きしましょう。
+        </p>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page14.html">
+  <ons-page id="fourteen-page">
+    <ons-toolbar>
+        <div class="center">Page 14</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>素直（？）な愛され系
+
+          とても世渡り上手なタイプのあなた。
+          博愛主義ですがジャイアニズムの人もすくなくないです。
+        </p>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page15.html">
+  <ons-page id="fifteen-page">
+    <ons-toolbar>
+        <div class="center">Page 15</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>マイペース万歳！！
+
+          何を言われても自分を崩されない、実は一番恐ろしいタイプ。
+          本人はそれに気づきません。
+        </p>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page16.html">
+  <ons-page id="sixteen-page">
+    <ons-toolbar>
+        <div class="center">Page 16</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>ひねくれ者ですか？
+
+          現代っ子の鏡です。現実しか見ていません。
+          あなたも昔は夢があったはず...だよね？？
+        </p>
+      </div>
+    </ons-page>
+  </ons-template>
+
+</body>
+</html>
+
